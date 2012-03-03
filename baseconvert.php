@@ -12,12 +12,12 @@ function baseconvert($Value, $FromBase, $ToBase){
 
 	//Make sure ToBase is even valid.
 	if($ToBase<2 or $ToBase>62){
-		return 0;
+		return false;
 	}
 
-	//Make sure ToBase is even valid.
+	//Make sure FromBase is even valid.
 	if($FromBase<2 or $FromBase>62){
-		return 0;
+		return false;
 	//If we aren't using a case-sensitive base then force uppercase.
 	}elseif($FromBase<=36){
 		$Value=strtoupper($Value);
@@ -33,7 +33,7 @@ function baseconvert($Value, $FromBase, $ToBase){
 
 	for($i=0;$i<$Length;$i++){
 		if(($Number[$i]=strpos($FromMap, $Value{$i}))===false){
-			return 0;
+			return false;
 		}
 	}
 
