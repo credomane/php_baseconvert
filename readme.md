@@ -12,10 +12,11 @@ Do whatever you want with it. Credit Michael Renner and I if you want or don't.
 
 ### About
 baseconvert returns false when<br>
-> *$Value is invalid for the $FromBase<br>
+
+> $Value is invalid for the $FromBase<br>
 > 62 < $FromBase < 2  That means $FromBase is less 2 or greater than 62 for math geniuses.<br>
-> 62 <  $ToBase  < 2  That means  $ToBase  is less 2 or greater than 62 for math geniuses.<br>*
-<br>
+> 62 <  $ToBase  < 2  That means  $ToBase  is less 2 or greater than 62 for math geniuses.
+
 Michael Renner's unfucked_base_convert doesn't do any checking at all and will always convert.<br>
 <br>
 PHP's base_convert removes digits from $Value that aren't in $FromBase then continues as if nothing is wrong.<br>
