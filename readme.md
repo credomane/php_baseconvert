@@ -23,7 +23,7 @@ PHP's base_convert removes digits from $Value that aren't in $FromBase then cont
 <br>
 <br>
 base_convert is obviously the fastest because it is a native method.<br>
-unfucked_base_convert is much much slower but doesn't suffer from base_convert's double and float limitations.<br>
+unfucked_base_convert is much slower when doing conversions en mass but doesn't suffer from base_convert's double and float limitations.<br>
 baseconvert is a little slower than unfucked_base_convert because of the parameter validation but the difference in neligible when compared to the native method.<br>
 
 
