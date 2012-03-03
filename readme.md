@@ -1,3 +1,16 @@
+baseconvert
+===========
+
+### Description
+Converts any string of any base to any other base without PHP native method base_convert's double and float limitations.
+
+### Instructions
+Include the baseconvert.php in your script then call baseconvert() with the same parameters as PHP's base_convert.
+
+### License
+Do whatever you want with it. Credit Michael Renner and I if you want or don't.
+
+### About
 baseconvert returns false when
   $Value is invalid for the $FromBase
   62 < $FromBase < 2  That means $FromBase is less 2 or greater than 62 for math geniuses.
